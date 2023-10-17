@@ -3,27 +3,27 @@ from fastapi import FastAPI, APIRouter
 import uvicorn
 
 #class PromocashData(BaseModel):
-class PromocashData():
-    Plazo: str
-    Categoria: str
-    Unidad: str
-    Edad_Solicitud: int
-    Genero: str 
-    Estado_Civil:str
-    Estudios: str
-    Fuente_Ingresos: str	
-    CP: int
-    Anos_Residencia: int
-    Tipo_Vivienda: str
-    Asentamiento: str
-    Antiguedad: int
-    Ingresos: int
-    Egresos: int
-    Ingreso_Conyuge: str
-    CP_Aval: int
-    Monto: int
-    Score_Agt: float
-    Processed: str | None = None
+# class PromocashData():
+#     Plazo: str
+#     Categoria: str
+#     Unidad: str
+#     Edad_Solicitud: int
+#     Genero: str 
+#     Estado_Civil:str
+#     Estudios: str
+#     Fuente_Ingresos: str	
+#     CP: int
+#     Anos_Residencia: int
+#     Tipo_Vivienda: str
+#     Asentamiento: str
+#     Antiguedad: int
+#     Ingresos: int
+#     Egresos: int
+#     Ingreso_Conyuge: str
+#     CP_Aval: int
+#     Monto: int
+#     Score_Agt: float
+#     Processed: str | None = None
 
 app = FastAPI()
 class HelloWorld():
