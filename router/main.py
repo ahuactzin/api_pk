@@ -3,8 +3,8 @@ from pydantic import BaseModel
 import uvicorn
 
 #class PromocashData(BaseModel):
-# class PromocashData():
-#     Plazo: str
+class PromocashData():
+    Plazo: str
 #     Categoria: str
 #     Unidad: str
 #     Edad_Solicitud: int
