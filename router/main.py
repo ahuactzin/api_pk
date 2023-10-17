@@ -23,7 +23,7 @@ class PromocashData():
     CP_Aval: int
     Monto: int
     Score_Agt: float
-#     Processed: str | None = None
+    Processed: str | None = None
 
 app = FastAPI()
 class HelloWorld():
