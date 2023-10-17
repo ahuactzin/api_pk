@@ -46,8 +46,8 @@ router.add_api_route('/api/v2/hello-world',
 router.add_api_route('/api/v2/by', 
                      endpoint = HelloWorld().read_by, methods=["GET"])
 
-router.add_api_route('/api/v2/process', 
-                     endpoint = HelloWorld().process, methods=["POST"])
+#router.add_api_route('/api/v2/process', 
+#                     endpoint = HelloWorld().process, methods=["POST"])
 
 app.include_router(router)
 
