@@ -32,11 +32,11 @@ class HelloWorld():
     def read_by(self):
         return {"data": "By By"}
     
-    def process(self, item: PromocashData):
-        my_item = dict(item)
-        my_item.update({'Processed':'Yes'})
-        #returnvalue = {'aprove':1,'default_probability':0.1256}
-        return my_item
+    # def process(self, item: PromocashData):
+    #     my_item = dict(item)
+    #     my_item.update({'Processed':'Yes'})
+    #     #returnvalue = {'aprove':1,'default_probability':0.1256}
+    #     return my_item
     
 router = APIRouter()
 
