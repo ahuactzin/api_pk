@@ -2,8 +2,8 @@ from fastapi import FastAPI, APIRouter
 from pydantic import BaseModel
 import uvicorn
 
-#class PromocashData(BaseModel):
-class PromocashData():
+class PromocashData(BaseModel):
+#class PromocashData():
     Plazo: str
     Categoria: str
     Unidad: str
