@@ -1,5 +1,5 @@
 from fastapi import FastAPI, APIRouter
-#from pydantic import BaseModel
+from pydantic import BaseModel
 import uvicorn
 
 #class PromocashData(BaseModel):
