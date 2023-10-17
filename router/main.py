@@ -34,11 +34,11 @@ class HelloWorld():
     def read_by(self):
         return {"data": "By By"}
     
-    # def process(self, item: PromocashData):
-    #     my_item = dict(item)
-    #     my_item.update({'Processed':'Yes'})
-    #     #returnvalue = {'aprove':1,'default_probability':0.1256}
-    #     return my_item
+    def process(self, item: PromocashData):
+        my_item = dict(item)
+        my_item.update({'Processed':'Yes'})
+        #returnvalue = {'aprove':1,'default_probability':0.1256}
+        return my_item
     
 router = APIRouter()
 
@@ -48,8 +48,8 @@ router.add_api_route('/api/v2/hello-world',
 router.add_api_route('/api/v2/by', 
                      endpoint = HelloWorld().read_by, methods=["GET"])
 
-#router.add_api_route('/api/v2/process', 
-#                     endpoint = HelloWorld().process, methods=["POST"])
+router.add_api_route('/api/v2/process', 
+                    endpoint = HelloWorld().process, methods=["POST"])
 
 app.include_router(router)
 
